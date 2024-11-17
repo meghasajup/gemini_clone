@@ -38,7 +38,6 @@ const Sidebars = () => {
             </div>
 
             <div className="bottom">
-                {/* <DarkModeToggle /> */}
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt="" />
                     {extended ? <p>Help</p> : null}
