@@ -5,10 +5,10 @@ import { Context } from '../../context/Context';
 
 const Main = () => {
 
-    const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context)
+    const { onSent, recentPrompt, showResult, loading, resultData, setInput, input, isDarkMode } = useContext(Context)
 
     return (
-        <div className="main">
+        <div className={`main ${isDarkMode ? 'dark' : 'light'}`}>
             <div className="nav">
                 <p>Gemini</p>
                 <img src={assets.user_icon} alt="" />

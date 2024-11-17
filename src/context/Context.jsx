@@ -10,6 +10,11 @@ const ContextProvider = (props) => {
     const [showResult, setShowResult] = useState(false);
     const [loading, setLoading] = useState(false);
     const [resultData, setResultData] = useState("");
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode); 
+    };
 
     const delayPara = (index, nextWord) => {
         setTimeout(() => {
@@ -74,6 +79,8 @@ const ContextProvider = (props) => {
         input,
         setInput,
         newChat,
+        isDarkMode,
+        toggleDarkMode,
     };
 
     return <Context.Provider value={contextValue}>{props.children}</Context.Provider>;

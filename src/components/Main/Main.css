@@ -198,3 +198,41 @@
         gap: 5px;
     }
 }
+
+.main.dark {
+    background-color: #333;
+    color: white;
+}
+
+.main.dark .nav p {
+    color: white; 
+}
+
+.main.light {
+    background-color: #ffffff;
+    color: #282828;
+}
+
+.main.dark .greet {
+    color: #c4c7c5; 
+}
+
+.main.dark .cards .card p {
+    color: white; 
+}
+
+.main.dark .result-title p {
+    color: white; 
+}
+
+.main.dark .result-data p {
+    color: white; 
+}
+
+.main.dark .bottom-info {
+    color: white; 
+}
+
+.search-box input {
+    color: black; 
+}
